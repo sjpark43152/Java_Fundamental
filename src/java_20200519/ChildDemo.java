@@ -11,12 +11,14 @@ public class ChildDemo {
 		
 		Child c = new Child();
 		c.money = 1_000_000_000;
+		c.setParentMoney(1_000_000);
 		c.chicken = "교촌통닭";
 		c.gotoSchool();
 		c.makeMoney();
 		c.play("omok");
 		
 		System.out.println(c.money);
+		System.out.println(c.getParentMoney());
 		System.out.println(c.chicken);
 		
 	}
