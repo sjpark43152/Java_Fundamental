@@ -22,7 +22,7 @@ class B extends A{
 		//super();
 	}
 }
-
+}
 
 
 
