@@ -21,7 +21,6 @@ public class StopWatchDemo {
 		String readLine = br.readLine();
 		//Java Reflection 24-25
 		Class clazz = Class.forName(readLine);
-		
 		StopWatch s = (StopWatch)clazz.newInstance();
 		run(s);
 		
