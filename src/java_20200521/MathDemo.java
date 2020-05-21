@@ -28,6 +28,12 @@ public class MathDemo {
 		//제곱근 = 루트 -> 수학공부의 중요성 
 		d1 = Math.sqrt(3);
 		System.out.println(d1);
+		
+		d1 = Math.pow(2,  3);
+		System.out.println(d1);
+		
+		d1 = Math.random()*45;
+		System.out.println(d1);
 	}
 
 }
