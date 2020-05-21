@@ -16,13 +16,14 @@ public class VarArgDemo {
 			System.out.println();//개행(내려쓰기)
 		}
 		
-		public static void main (String[] args) {
+		public static void main(String[] args) {
 			VarArgDemo v1 = new VarArgDemo();
 			v1.print(1);
 			v1.print(10,20);
 			v1.print(100,200,300);
-			v1.print(1000,2000,3000,4000);
+			v1.print(1000,2000,3000,4000);	
 		}
+		
 	}
 
 }

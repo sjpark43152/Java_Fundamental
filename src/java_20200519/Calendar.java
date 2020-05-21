@@ -1,5 +1,9 @@
 package java_20200519;
-
+/**
+ * 
+ * @author acorn-512
+ *
+ */
 public class Calendar {
 	private int[] monthArray = 
 		{31,28,31,30,31,30,31,31,30,31,30,31};
