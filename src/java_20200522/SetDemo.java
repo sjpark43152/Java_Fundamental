@@ -7,7 +7,11 @@ public class SetDemo {
 	public static void main(String[] args) {
 		//ctl + shift + o(영문자) 자동 임폴트
 		//Hashset 객체의 중복을 허용하지 않고, 순서 없음.
-		HashSet set = new HashSet();
+		
+		//1. 선언 및 생성
+		HashSet set = new HashSet();//선언 Hashset
+		
+		//2. 할당
 		set.add(1);//auto boxing
 		set.add(2);
 		set.add(3);
@@ -15,12 +19,12 @@ public class SetDemo {
 		set.add(1);
 		//배열하고 똑같음
 		System.out.println(set.size());
-		
+		//3. 출력
 		Iterator i = set.iterator();
 		while(i.hasNext()) {
 			Integer number = (Integer)i.next();
 			System.out.println(number);
-		}
+		}// 이코딩은 맨날 똑같음
 		
 		
 		
