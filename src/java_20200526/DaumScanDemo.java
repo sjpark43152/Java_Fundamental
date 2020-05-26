@@ -37,7 +37,6 @@ public class DaumScanDemo {
 			pw.println(readLine);
 		}
 		//bw.flush();
-
 	}
 
 }
