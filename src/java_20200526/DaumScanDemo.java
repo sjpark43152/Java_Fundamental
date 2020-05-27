@@ -19,19 +19,15 @@ public class DaumScanDemo {
 		InputStreamReader isr = new InputStreamReader(in);
 		BufferedReader br = new BufferedReader(isr);
 		String readLine = null;
-		
 		/*FileWriter fw = new FileWriter("c:\\dev\\daum.html");
-		
 		while((readLine = br.readLine())!= null) {
 			System.out.println(readLine);
 			fw.write(readLine+"\n");
 		*/
-		
 		//더 좋은 방법.. 아직 어떤 개념으로 돌아가는지 모르겠음. 틀은 알겠음.(throws랑 try&catch차이)
 		FileWriter fw = new FileWriter("c:\\dev\\daum.html");
 		BufferedWriter bw = new BufferedWriter(fw);
 		PrintWriter pw = new PrintWriter(bw,true);
-		
 		while((readLine = br.readLine())!= null) {
 			System.out.println(readLine);
 			pw.println(readLine);

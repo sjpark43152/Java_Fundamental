@@ -18,11 +18,9 @@ public class BufferedReaderWriterDemo {
 		try {
 			fr = new FileReader("c:\\dev\\FileDemo.java");
 			fw = new FileWriter("c:\\dev\\FileDemo4.java");
-			
 			br = new BufferedReader(fr);//기가막힌 메소드가 있다.readLine()
 			bw = new BufferedWriter(fw);
 			pw = new PrintWriter(bw,true);
-			
 			String readLine = null;
 			//br.readLine() : 개행을 뺀 한줄을 읽는다.
 			while((readLine = br.readLine())!= null) {
@@ -30,10 +28,7 @@ public class BufferedReaderWriterDemo {
 				//bw.newLine();
 				pw.println(readLine);
 			}
-			
 			//bw.flush();
-			
-			
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
 		}catch(IOException e) {
@@ -48,10 +43,6 @@ public class BufferedReaderWriterDemo {
 				e.printStackTrace();
 			}
 		}
-		
-		
-		
-		
 	}
 
 }
