@@ -9,8 +9,17 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class CoinMarketCapCrawlingDemo {
-	
 	public static void main(String[] args) {
+		//단순해보이지만 어려운 코드임.
+		String test = "6,909.45".replaceAll(",", "");
+		double d = Double.parseDouble(test);
+		System.out.println(d);
+		
+		String test1 = String.format("%,2f", d);
+		
+		System.out.println(test1);//6,909.45;
+		
+		
 		//개행쓸때 조금 불편"\n" 유닉스는 "\r" 맥에서 열면 개행안됨.
 		FileWriter fw = null;
 		
@@ -33,8 +42,8 @@ public class CoinMarketCapCrawlingDemo {
 			
 		    Elements trElements = doc.select(".cmc-table__table-wrapper-outer table tbody tr");
 		
-		    System.out.println("날짜\t시가\t고가\t저가\t종가\t거래량\t총량");
-		    fw.write("날짜\t시가\t고가\t저가\t종가\t거래량\t총량\n");
+		    System.out.println("날짜\t\t시가\t고가\t저가\t종가\t거래량\t\t총량");
+		    fw.write("날짜\t\t시가\t고가\t저가\t종가\t거래량\t\t총량\n");
 		
 	/*	
 		for(int i=0;i<trElements.size();i++) {
