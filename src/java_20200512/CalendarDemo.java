@@ -51,16 +51,7 @@ public class CalendarDemo {
 		}else if(rest == 0) {
 			message = "일요일";
 		}
-		
-		
 		System.out.println(year+"년 "+month+"월 "+day+" 일은 "+
 		message+" 입니다.");
-		
-		
-		
-		
-		
-		
-		
 	}
 }
