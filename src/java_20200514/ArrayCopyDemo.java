@@ -12,7 +12,7 @@ public class ArrayCopyDemo {
 		// 2 => 복사할 배열의 위치
 		// 4 => 원본배열의 4개 요소를 복사
 	
-		System.arraycopy(fruits, 0, temp, 2, 4);;
+		System.arraycopy(fruits, 0, temp, 2 ,4);
 		
 		temp[0] = "peach";
 		temp[1] = "pear";
