@@ -1,4 +1,4 @@
-package java20200603;
+package java_20200603;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,16 +11,18 @@ import java.util.ArrayList;
 //DAO : Date Access Object
 public class MemberDao {
 	
+	public MemberDao() {
+		try {
+			Class.forName("org.mariadb.jdbc.Driver");
+		}catch(ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public int insert(MemberDto m) {
 		
 		int resultCount = 0;
-		
-		try {
-			Class.forName("org.mariadb.jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		
@@ -54,23 +56,13 @@ public class MemberDao {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-		
 		}
-		
-		
 		return resultCount ;
-		
 	}
 	
 	public int update(MemberDto m) {
 		int resultCount = 0;
 		
-		try {//alt + shift + z => try/catch block
-			Class.forName("org.mariadb.jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		
@@ -115,12 +107,6 @@ public class MemberDao {
 	public int delete(int num) {
 		int resultCount = 0;
 		
-		try {
-			Class.forName("org.mariadb.jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -157,12 +143,6 @@ public class MemberDao {
 	public ArrayList<MemberDto> select(){
 		ArrayList<MemberDto> list = new ArrayList<MemberDto>();
 		
-		try {
-			Class.forName("org.mariadb.jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -198,13 +178,7 @@ public class MemberDao {
 	
 	public MemberDto select(int num) {
 		MemberDto mdto = null;
-		
-		try {
-			Class.forName("org.mariadb.jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
 		
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -239,9 +213,6 @@ public class MemberDao {
 		
 		return mdto;
 	}
-	
-	
-	
 	/*
 	public XXX select(XXX) {
 		

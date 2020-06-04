@@ -1,4 +1,4 @@
-package java20200603;
+package java_20200603;
 
 import java.util.ArrayList;
 

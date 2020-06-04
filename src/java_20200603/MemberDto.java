@@ -1,4 +1,4 @@
-package java20200603;
+package java_20200603;
 //Member 테이블의 데이터를 관리하기 위한 클래스
 //Member 테이블의 컬럼(num, name, addr)을 멤버변수로 정하면 됨.
 //DTO : Date Transfer Object
